@@ -23,4 +23,8 @@ window.addEventListener("orientationchange", function () {
   window.addEventListener("resize", afterOrientationChange);
 });
 
-$(document).ready(function () {});
+$(document).ready(function () {
+  console.log("jfkfjd");
+});
+
+console.log("jshfdjkshfkjhshsdkjf");

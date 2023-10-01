@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betia - Billing</title>
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/toastify.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="p-4 flex justify-center items-center bg-[#F24B18] w-full text-center text-[18px] font-bold text-white"
+      >
+        <div class="w-full relative inset-0 max-w-[1280px] mx-auto">
+          <p>Nhập thông tin</p>
+          <button class="absolute top-[50%] -translate-y-[50%] left-0">
+            <img src="./assets/images/ic_back_arrow.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="max-w-[1280px] w-full mx-auto">
+      <div class="flex flex-col lg:flex-row-reverse">
+        <div class="max-w-[700px] w-full mx-auto">
+          <div
+            class="p-8 flex justify-center items-start space-x-4 md:space-x-8"
+          >
+            <div class="flex justify-center items-center flex-col">
+              <div
+                class="shadow-[0px_0px_3px_0px_#00000066] rounded-2xl px-4 py-2 mb-4 min-w-[120px]"
+              >
+                <div class="mb-2">
+                  <img
+                    src="./assets/images/logo_betia_transparent.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="text-[#F24B18] text-[24px] font-bold text-center">
+                  30
+                </div>
+              </div>
+              <button class="flex justify-center items-center space-x-2">
+                <p class="text-[#F24B18] font-bold">Chọn lại gói</p>
+                <div class="">
+                  <img src="./assets/images/ic_dropdown_red.png" alt="" />
+                </div>
+              </button>
+            </div>
+            <div class="md:flex md: justify-center md:space-x-2">
+              <div class="mb-2">
+                <p class="text-[18px] font-bold text-[#18325C]">
+                  Betia English 30
+                </p>
+                <p class="text-[#252525] text-[14px]">
+                  Sử dụng Betia English 30 ngày không giới hạn
+                </p>
+              </div>
+              <div class="">
+                <div class="mb-2 text-[18px] font-bold text-[#F24B18]">
+                  <p>90.000vnđ</p>
+                </div>
+                <div class="mb-2 flex space-x-4 text-[14px] text[#3E3E3E]">
+                  <p class="line-through">180.000đ</p>
+                  <p class="font-bold">-50%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full mb-8">
+            <img src="./assets/images/line_space.png" alt="" />
+          </div>
+
+          <div class="hidden lg:block">
+            <div class="p-4">
+              <div class="bg-[#F6F6F6] p-4 rounded-2xl">
+                <div
+                  class="mb-4 flex justify-between items-center text-[14px] font-bold py-4"
+                >
+                  <p class="text-[#00649D]">Đơn hàng</p>
+                  <p>Betia English 30</p>
+                </div>
+                <div class="mb-4">
+                  <div class="mb-2 flex justify-between items-center">
+                    <p>Tạm tính</p>
+                    <p>99.000 vnđ</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p>Giảm giá</p>
+                    <p class="text-[#00649D]"><span>-10.000</span>vnđ</p>
+                  </div>
+                </div>
+                <div class="mb-4 flex justify-between items-center text-[14px]">
+                  <p>Số tiền cần thanh toán</p>
+                  <p class="text-[#F24B18] font-bold text-[18px]">
+                    <span>89.000</span>vnđ
+                  </p>
+                </div>
+                <div class="">
+                  <div class="mb-4 font-bold text-[14px] text-[#252525]">
+                    <p>Thông tin mã đơn hàng được gửi về</p>
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      placeholder="Email fill"
+                      class="w-full border-b border-b-[#C1C7CD] rounded-lg px-4 py-3"
+                    />
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    placeholder="SDT fill"
+                    class="w-full border-b border-b-[#C1C7CD] rounded-lg px-4 py-3"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full mb-4">
+              <img src="./assets/images/line_space.png" alt="" />
+            </div>
+
+            <div class="p-4 w-full hidden lg:block">
+              <button
+                class="w-full rounded-md bg-gradient-to-t from-[#F24B18] to-[#F7661F] text-white font-bold p-4 text-center"
+              >
+                Tiến hành thanh toán
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:hidden">
+            <div class="bg-[#F6F6F6] rounded-2xl p-4 mb-8">
+              <div class="">
+                <div class="border-l-4 border-l-[#DC0000] px-2 font-bold mb-4">
+                  <p>Chuyển khoản bằng cách quét mã QR trên app ngân hàng</p>
+                </div>
+                <div class="w-full bg-white rounded-2xl p-4 mb-8">
+                  <div class="min-w-[200px] mb-6 flex justify-center">
+                    <img
+                      src="./assets/images/qr_code.png"
+                      alt=""
+                      class="aspect-square"
+                    />
+                  </div>
+                </div>
+
+                <div class="w-full bg-white rounded-2xl p-4 mb-8">
+                  <div
+                    class="mb-2 flex justify-between items-center text-[14px]"
+                  >
+                    <p class="">Tên tài khoản</p>
+                    <p class="text-[#00649D] font-bold">VTC ONLINE</p>
+                  </div>
+                  <div
+                    class="mb-2 flex justify-between items-center text-[14px]"
+                  >
+                    <p class="">Số tài khoản</p>
+                    <p class="text-[#00649D] font-bold">19026062999888</p>
+                  </div>
+                  <div
+                    class="mb-2 flex justify-between items-center text-[14px]"
+                  >
+                    <p class="">Ngân hàng</p>
+                    <p class="text-[#00649D] font-bold">Techcombank</p>
+                  </div>
+                  <div
+                    class="mb-2 flex justify-between items-center text-[14px]"
+                  >
+                    <p class="">Giảm giá</p>
+                    <p class="text-[#00649D] font-bold">- 10.000vnđ</p>
+                  </div>
+                  <div
+                    class="mb-4 flex justify-between items-center text-[14px]"
+                  >
+                    <p>Số tiền cần thanh toán</p>
+                    <p class="text-[#F24B18] font-bold text-[18px]">
+                      <span>89.000</span>vnđ
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-[#F6F6F6] rounded-2xl border border-[#DDE1E6] p-4 mx-4"
+            >
+              <div class="mb-4 font-bold text-[14px] text-[#252525]">
+                <p>Thông tin mã đơn hàng được gửi về</p>
+              </div>
+              <div class="mb-4">
+                <input
+                  type="text"
+                  placeholder="Email fill"
+                  class="w-full border-b border-b-[#C1C7CD] rounded-lg px-4 py-3"
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="text"
+                  placeholder="SDT fill"
+                  class="w-full border-b border-b-[#C1C7CD] rounded-lg px-4 py-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden lg:block">
+          <div class="py-0 md:py-[2%] lg:py-[4%] max-w-[700px] w-full mx-auto">
+            <div class="px-4 flex flex-col">
+              <div class="hidden lg:block">
+                <div class="flex items-center space-x-4 mb-4">
+                  <div class="">
+                    <img
+                      src="./assets/images/ic_coin.png"
+                      alt=""
+                      class="aspect-square"
+                    />
+                  </div>
+                  <div class=""><p>Chọn hình thức thanh toán</p></div>
+                </div>
+                <form class="w-full">
+                  <div class="flex space-x-4 mb-4">
+                    <input
+                      type="radio"
+                      name="selected-option-banking"
+                      id="Chuyển khoản"
+                      checked
+                    />
+                    <label for="Chuyển khoản" class="flex space-x-2 font-bold">
+                      <div class="">
+                        <img
+                          src="./assets/images/ic_banking.png"
+                          alt=""
+                          class="aspect-square"
+                        />
+                      </div>
+                      <p>Chuyển khoản</p>
+                    </label>
+                  </div>
+                  <div class="flex space-x-4 mb-4">
+                    <input
+                      type="radio"
+                      name="selected-option-banking"
+                      id="Thẻ game"
+                    />
+                    <label for="Thẻ game" class="flex space-x-2 font-bold">
+                      <div class="">
+                        <img
+                          src="./assets/images/ic_card_game.png"
+                          alt=""
+                          class="aspect-square"
+                        />
+                      </div>
+                      <p>Thẻ game</p>
+                    </label>
+                  </div>
+                  <div class="flex space-x-4 mb-4">
+                    <input
+                      type="radio"
+                      name="selected-option-banking"
+                      id="Ví điện tử"
+                    />
+                    <label for="Ví điện tử" class="flex space-x-2 font-bold">
+                      <div class="">
+                        <img
+                          src="./assets/images/ic_wallet.png"
+                          alt=""
+                          class="aspect-square"
+                        />
+                      </div>
+                      <p>Ví điện tử</p></label
+                    >
+                  </div>
+                </form>
+              </div>
+
+              <div class="bg-[#F6F6F6] rounded-2xl p-4">
+                <div class="">
+                  <div
+                    class="border-l-4 border-l-[#DC0000] px-2 font-bold mb-4"
+                  >
+                    <p>Chuyển khoản bằng cách quét mã QR trên app ngân hàng</p>
+                  </div>
+                  <div class="w-full bg-white rounded-2xl p-4">
+                    <div class="text-[#00649D] mb-2 w-full text-center">
+                      Bạn sẽ nhận được: <span class="font-bold">76 vnđ</span>
+                    </div>
+                    <div class="min-w-[200px] mb-6 flex justify-center">
+                      <img
+                        src="./assets/images/qr_code.png"
+                        alt=""
+                        class="aspect-square"
+                      />
+                    </div>
+                    <div class="note">
+                      <div class="font-bold text-[#F24B18]">* Lưu ý:</div>
+                      <ul class="text-[#252525]">
+                        <li class="mb-2">
+                          Với MB app Android hiện bị lỗi không hiển thị nội dung
+                          và số tiền,phía ngân hàng MB bank sẽ sửa lỗi và IOE có
+                          trách nghiệm thông báo sớm nhất đến khách hàng
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div
+                    class="border-l-4 border-l-[#DC0000] px-2 font-bold mb-4"
+                  >
+                    <p>
+                      Chuyển khoản bằng cách nhập thông tin chuyển khoản lên app
+                      ngân hàng
+                    </p>
+                  </div>
+                  <div class="w-full bg-white rounded-2xl p-4">
+                    <div class="step-1 mb-6">
+                      <div class="mb-2">
+                        <p>
+                          Bước 1: Nhập số tài khoản dưới đây vào app của bạn
+                        </p>
+                      </div>
+                      <div
+                        class="bg-gradient-to-t from-[#F24B18] to-[#105296] rounded-md p-[1px] mb-2"
+                      >
+                        <div
+                          class="h-full w-full bg-white flex items-center rounded-md"
+                        >
+                          <div
+                            class="px-4 py-2 text-[#DC0000] font-bold w-[75%]"
+                          >
+                            <p>19026062999888</p>
+                          </div>
+                          <button
+                            class="bg-[#DFEAF1] h-full py-3 flex justify-center items-center w-[25%] rounded-r-md"
+                          >
+                            <div class="">
+                              <img
+                                src="./assets/images/ic_coppy.png"
+                                alt=""
+                                class="aspect-square"
+                              />
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="text-[14px]">
+                        <p>
+                          * Chủ tài khoản:
+                          <span class="font-bold">VTC ONLINE</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mb-6">
+                      <img
+                        src="./assets/images/ic_next_step.png"
+                        alt=""
+                        class="aspect-square"
+                      />
+                    </div>
+                    <div class="step-2 mb-6">
+                      <div class="mb-2">
+                        <p>Bước 2: Nhập chính xác nội dung chuyển khoản</p>
+                      </div>
+                      <div
+                        class="bg-gradient-to-t from-[#F24B18] to-[#105296] rounded-md p-[1px] mb-2"
+                      >
+                        <div
+                          class="h-full w-full bg-white flex items-center rounded-md"
+                        >
+                          <div
+                            class="px-4 py-2 text-[#DC0000] font-bold w-[75%]"
+                          >
+                            <p>NAP SFEF8C</p>
+                          </div>
+                          <button
+                            class="bg-[#DFEAF1] h-full py-3 flex justify-center items-center w-[25%] rounded-r-md"
+                          >
+                            <div class="">
+                              <img
+                                src="./assets/images/ic_coppy.png"
+                                alt=""
+                                class="aspect-square"
+                              />
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="text-[14px]">
+                        <p>
+                          * (Để đảm bảo giao dịch thành công, khách hàng cần
+                          nhập đúng nội dung chuyển khoản như trên)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mb-6">
+                      <img
+                        src="./assets/images/ic_next_step.png"
+                        alt=""
+                        class="aspect-square"
+                      />
+                    </div>
+                    <div class="step-3 mb-6">
+                      <div class="mb-2">
+                        <p>Bước 3: Nhập số tiền và ấn chuyển khoản</p>
+                      </div>
+                      <div
+                        class="bg-gradient-to-t from-[#F24B18] to-[#105296] rounded-md p-[1px] mb-2"
+                      >
+                        <div
+                          class="h-full w-full bg-white flex items-center rounded-md"
+                        >
+                          <div
+                            class="px-4 py-2 text-[#DC0000] font-bold w-full"
+                          >
+                            <p>Số tiền tối thiểu 76.000 đ</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-[14px]">
+                        <p>
+                          * (Khách hàng cần nhập tối thiểu 50.000 đ và ấn chuyển
+                          khoản để hoàn thành )
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4">
+              <div class="font-bold text-[#F24B18]">Lưu ý:</div>
+              <ul class="text-[#252525]">
+                <li class="mb-2">
+                  - Mã gói gửi về điện thoại và email của bạn sẽ dùng để nhập
+                  trong ứng dụng Betia English, vui lòng không cung cấp mã cho
+                  bất kì ai sử dụng trước.
+                </li>
+                <li class="mb-2">
+                  - Để nhận gói nhanh nhất, chọn chuyển khoản nhanh 24/7 và tối
+                  thiểu 50.000 VNĐ.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="p-4 flex mx-auto md:max-w-[700px] lg:max-w-[50%] w-full lg:mr-0"
+      >
+        <button
+          class="w-full rounded-md bg-gradient-to-t from-[#F24B18] to-[#F7661F] text-white font-bold p-4 text-center lg:hidden"
+        >
+          Tiến hành thanh toán
+        </button>
+      </div>
+    </section>
+
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/toastify-js.js"></script>
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

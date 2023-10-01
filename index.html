@@ -1,24 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betia - Billing</title>
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/toastify.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CF</title>
-  <link rel="stylesheet" href="./assets/css/aos.css">
-  <link rel="stylesheet" href="./assets/css/base.css" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="./assets/css/animate.min.css">
-  <link rel="stylesheet" href="./assets/css/toastify.min.css">
-</head>
+  <body>
+    <header>
+      <div
+        class="p-4 flex justify-center items-center bg-[#F24B18] w-full text-center text-[18px] font-bold text-white"
+      >
+        <div class="w-full relative inset-0 max-w-[1280px] mx-auto">
+          <p>Nhập thông tin</p>
+          <button class="absolute top-[50%] -translate-y-[50%] left-0">
+            <img src="./assets/images/ic_back_arrow.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="max-w-[700px] mx-auto">
+      <div class="p-8 flex justify-center items-start space-x-4 md:space-x-8">
+        <div class="flex justify-center items-center flex-col">
+          <div
+            class="shadow-[0px_0px_3px_0px_#00000066] rounded-2xl px-4 py-2 mb-4 min-w-[120px]"
+          >
+            <div class="mb-2">
+              <img
+                src="./assets/images/logo_betia_transparent.png"
+                alt=""
+                class=""
+              />
+            </div>
+            <div class="text-[#F24B18] text-[24px] font-bold text-center">
+              30
+            </div>
+          </div>
+          <button class="flex justify-center items-center space-x-2">
+            <p class="text-[#F24B18] font-bold">Chọn lại gói</p>
+            <div class="">
+              <img src="./assets/images/ic_dropdown_red.png" alt="" />
+            </div>
+          </button>
+        </div>
+        <div class="md:flex md: justify-center md:space-x-2">
+          <div class="mb-2">
+            <p class="text-[18px] font-bold text-[#18325C]">Betia English 30</p>
+            <p class="text-[#252525] text-[14px]">
+              Sử dụng Betia English 30 ngày không giới hạn
+            </p>
+          </div>
+          <div class="">
+            <div class="mb-2 text-[18px] font-bold text-[#F24B18]">
+              <p>90.000vnđ</p>
+            </div>
+            <div class="mb-2 flex space-x-4 text-[14px] text[#3E3E3E]">
+              <p class="line-through">180.000đ</p>
+              <p class="font-bold">-50%</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<body>
-  <section></section>
-  <script src="./assets/js/aos.js"></script>
-  <script src="./assets/js/toastify-js.js"></script>
-  <script src="./assets/js/jquery-3.6.3.min.js"></script>
-  <script src="./assets/js/main.js"></script>
-</body>
+      <div class="w-full mb-4">
+        <img src="./assets/images/line_space.png" alt="" />
+      </div>
 
+      <div class="p-4">
+        <div
+          class="w-full rounded-md bg-gradient-to-t from-[#F24B18] to-[#F7661F] text-white font-bold p-4 text-center mb-4"
+        >
+          Đăng nhập
+        </div>
+        <div class="text-[#105296] mb-4 font-bold text-center w-full">Hoặc</div>
+        <div
+          class="bg-[#F6F6F6] w-full border border-[#DDE1E6] mx-auto p-6 rounded-[24px]"
+        >
+          <h3 class="text-[#105296] mb-[4%] text-[20px] font-bold">
+            Mua gói không cần đăng nhập
+          </h3>
+          <p class="mb-[12%] md:mb-[8%] lg:mb-[4%] text-[14px]">
+            Điền đầy đủ, chính xác thông tin để nhận đơn hàng và lưu trữ thông
+            tin đơn hàng của bạn
+          </p>
+          <form action="">
+            <div class="flex flex-col mb-[4%] lg:mb-[2%]">
+              <label for="" class="mb-[2%] lg:mb-[1%] text-[14px]"
+                >Nhập ID</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Nhập user ID hoặc goID"
+                class="px-4 py-2 rounded-lg border-b border-b-[#C1C7CD]"
+              />
+            </div>
+            <div class="flex flex-col mb-[4%] lg:mb-[2%]">
+              <label for="" class="mb-[2%] lg:mb-[1%] text-[14px]">Email</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Nhập email tại đây..."
+                class="px-4 py-2 rounded-lg border-b border-b-[#C1C7CD]"
+              />
+            </div>
+            <div class="flex flex-col mb-[8%]">
+              <label for="" class="mb-[2%] lg:mb-[1%] text-[14px]"
+                >Số điện thoại</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Nhập SĐT tại đây..."
+                class="px-4 py-2 rounded-lg border-b border-b-[#C1C7CD]"
+              />
+            </div>
+            <div
+              class="w-full rounded-md bg-gradient-to-t from-[#F24B18] to-[#F7661F] text-white font-bold p-4 text-center"
+            >
+              Tạo đơn hàng
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/toastify-js.js"></script>
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
