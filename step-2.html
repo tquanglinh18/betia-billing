@@ -13,25 +13,11 @@
   </head>
 
   <body>
-    <header>
-      <div
-        class="p-4 flex justify-center items-center bg-[#F24B18] w-full text-center text-[18px] font-bold text-white"
-      >
-        <div class="w-full relative inset-0 max-w-[1280px] mx-auto">
-          <p>Nhập thông tin</p>
-          <button class="absolute top-[50%] -translate-y-[50%] left-0">
-            <img src="./assets/images/ic_back_arrow.png" alt="" />
-          </button>
-        </div>
-      </div>
-    </header>
 
-    <section class="max-w-[700px] mx-auto">
-      <div class="p-8 flex justify-center items-start space-x-4 md:space-x-8">
-        <div class="flex justify-center items-center flex-col">
-          <div
-            class="shadow-[0px_0px_3px_0px_#00000066] rounded-2xl px-4 py-2 mb-4 min-w-[120px]"
-          >
+    <section class="container-section">
+      <div class="package-info">
+        <div class="flex-col-center">
+          <div class="box-img-package">
             <div class="mb-2">
               <img
                 src="./assets/images/logo_betia_transparent.png"
@@ -39,29 +25,27 @@
                 class=""
               />
             </div>
-            <div class="text-[#F24B18] text-[24px] font-bold text-center">
-              30
-            </div>
+            <div class="box-img-package__time">30</div>
           </div>
-          <button class="flex justify-center items-center space-x-2">
+          <button class="flex-row-center">
             <p class="text-[#F24B18] font-bold">Chọn lại gói</p>
             <div class="">
               <img src="./assets/images/ic_dropdown_red.png" alt="" />
             </div>
           </button>
         </div>
-        <div class="md:flex md: justify-center md:space-x-2">
+        <div class="md:flex md:justify-center md:space-x-2">
           <div class="mb-2">
-            <p class="text-[18px] font-bold text-[#18325C]">Betia English 30</p>
-            <p class="text-[#252525] text-[14px]">
+            <p class="package-name">Betia English 30</p>
+            <p class="package-des">
               Sử dụng Betia English 30 ngày không giới hạn
             </p>
           </div>
           <div class="">
-            <div class="mb-2 text-[18px] font-bold text-[#F24B18]">
+            <div class="package-price">
               <p>90.000vnđ</p>
             </div>
-            <div class="mb-2 flex space-x-4 text-[14px] text[#3E3E3E]">
+            <div class="package-price-sale">
               <p class="line-through">180.000đ</p>
               <p class="font-bold">-50%</p>
             </div>
@@ -74,7 +58,7 @@
       </div>
 
       <div class="p-4">
-        <div class="bg-[#F6F6F6] p-4 rounded-2xl">
+        <div class="voucher-sale">
           <div class="mb-4 font-bold">
             <p>Nhập mã voucher tại đây</p>
           </div>
@@ -84,23 +68,16 @@
               dịch vụ gói thấp hơn giá trị Voucher.
             </p>
           </div>
-          <div
-            class="bg-[#D7F4FF] border-b border-b-[#C1C7CD] p-1 flex justify-between items-center space-x-2 rounded-md mb-4"
-          >
-            <!-- <input
-              type="text"
-              class="w-full bg-transparent mx-2 text-[14px] text-[#252525] h-full p-2"
-            /> -->
-            <div
-              class="bg-[#00649D] text-white p-1 flex justify-between items-center space-x-2 rounded mx-2"
-            >
-              <div class="w-full">MGGIOE123123331</div>
+          <div class="voucher__input-frame">
+            <!-- <input type="text" class="voucher__input-field" /> -->
+            <div class="voucher_apply-success flex-row-between">
+              <div class="w-full mr-2">MGGIOE123123331</div>
               <button class="cursor-pointer">
                 <img src="./assets/images/ic_close.png" />
               </button>
             </div>
             <button
-              class="rounded-md bg-gradient-to-t from-[#F24B18] to-[#F7661F] text-white p-2 text-center min-w-[100px] md:min-w-[164px]"
+              class="voucher_apply_button"
             >
               Áp dụng
             </button>
@@ -117,34 +94,46 @@
         <img src="./assets/images/line_space.png" alt="" />
       </div>
 
-      <div class="px-4">
-        <div
-          class="mb-4 flex justify-between items-center text-[14px] font-bold py-4"
-        >
+      <div class="order-info">
+        <div class="flex-row-between order-info__id">
           <p class="text-[#00649D]">Đơn hàng</p>
           <p>Betia English 30</p>
         </div>
         <div class="mb-4">
-          <div class="mb-2 flex justify-between items-center">
+          <div class="flex-row-between mb-2">
             <p>Tạm tính</p>
             <p>99.000 vnđ</p>
           </div>
-          <div class="flex justify-between items-center">
+          <div class="flex-row-between">
             <p>Giảm giá</p>
             <p class="text-[#00649D]"><span>-10.000</span>vnđ</p>
           </div>
         </div>
-        <div class="mb-4 flex justify-between items-center text-[14px]">
+        <div class="mb-4 flex-row-between text-[14px]">
           <p>Số tiền cần thanh toán</p>
-          <p class="text-[#F24B18] font-bold text-[18px]">
-            <span>89.000</span>vnđ
-          </p>
+          <p class="order-info__final-price"><span>89.000</span>vnđ</p>
         </div>
+
+        <!-- <div class="address-receiver">
+          <div class="address-receiver__title">
+            <p>Thông tin mã đơn hàng được gửi về</p>
+          </div>
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Email fill"
+              class="input-filed"
+            />
+          </div>
+          <div class="mb-4">
+            <input type="text" placeholder="SDT fill" class="input-filed" />
+          </div>
+        </div> -->
       </div>
 
       <div class="p-4">
         <button
-          class="w-full rounded-md bg-gradient-to-t from-[#F24B18] to-[#F7661F] text-white font-bold p-4 text-center"
+          class="button-form"
         >
           Tiến hành thanh toán
         </button>

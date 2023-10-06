@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betia - Billing</title>
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/toastify.min.css" />
+  </head>
+
+  <body>
+    <div class="header-step flex-row-center">
+      <div class="header-step__name">
+        <p>Nhập thông tin</p>
+        <button class="header-step__back-btn">
+          <img src="./assets/images/ic_back_arrow.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <section class="container-section-pc">
+      <div class="flex flex-col lg:flex-row-reverse">
+        <div class="container-section">
+          <div class="package-info">
+            <div class="flex-col-center">
+              <div class="box-img-package">
+                <div class="mb-2">
+                  <img
+                    src="./assets/images/logo_betia_transparent.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="box-img-package__time">30</div>
+              </div>
+              <button class="flex-row-center">
+                <p class="text-[#F24B18] font-bold">Chọn lại gói</p>
+                <div class="">
+                  <img src="./assets/images/ic_dropdown_red.png" alt="" />
+                </div>
+              </button>
+            </div>
+            <div class="md:flex md: justify-center md:space-x-2">
+              <div class="mb-2">
+                <p class="package-name">Betia English 30</p>
+                <p class="package-des">
+                  Sử dụng Betia English 30 ngày không giới hạn
+                </p>
+              </div>
+              <div class="">
+                <div class="package-price">
+                  <p>90.000vnđ</p>
+                </div>
+                <div class="package-price-sale">
+                  <p class="line-through">180.000đ</p>
+                  <p class="font-bold">-50%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <img src="./assets/images/line_space.png" alt="" />
+          </div>
+
+          <div class="order-info">
+            <div class="flex-row-between order-info__id">
+              <p class="text-[#00649D]">Đơn hàng</p>
+              <p>Betia English 30</p>
+            </div>
+            <div class="mb-4">
+              <div class="flex-row-between mb-2">
+                <p>Tạm tính</p>
+                <p>99.000 vnđ</p>
+              </div>
+              <div class="flex-row-between">
+                <p>Giảm giá</p>
+                <p class="text-[#00649D]"><span>-10.000</span>vnđ</p>
+              </div>
+            </div>
+            <div class="mb-4 flex-row-between text-[14px]">
+              <p>Số tiền cần thanh toán</p>
+              <p class="order-info__final-price"><span>89.000</span>vnđ</p>
+            </div>
+
+            <div class="address-receiver">
+              <div class="address-receiver__title">
+                <p>Thông tin mã đơn hàng được gửi về</p>
+              </div>
+              <div class="mb-4">
+                <input
+                  type="text"
+                  placeholder="Email fill"
+                  class="input-filed"
+                />
+              </div>
+              <div class="mb-4">
+                <input type="text" placeholder="SDT fill" class="input-filed" />
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full mb-4">
+            <img src="./assets/images/line_space.png" alt="" />
+          </div>
+
+          <div class="button-buy">
+            <button class="button-form">Tiến hành thanh toán</button>
+          </div>
+        </div>
+
+        <div class="payments">
+          <div class="px-4 flex flex-col">
+            <div class="hidden lg:block">
+              <div class="flex items-center space-x-4 mb-4">
+                <div class="">
+                  <img
+                    src="./assets/images/ic_coin.png"
+                    alt=""
+                    class="aspect-square"
+                  />
+                </div>
+                <div class=""><p>Chọn hình thức thanh toán</p></div>
+              </div>
+              <form class="w-full">
+                <div class="payments-option_items mb-6">
+                  <input
+                    type="radio"
+                    name="option-payments"
+                    id="Chuyển khoản"
+                    checked
+                  />
+                  <label for="Chuyển khoản" class="payments-option_items-label">
+                    <div class="">
+                      <img
+                        src="./assets/images/ic_banking.png"
+                        alt=""
+                        class="aspect-square"
+                      />
+                    </div>
+                    <p>Chuyển khoản</p>
+                  </label>
+                </div>
+                <div class="payments-option_items mb-6">
+                  <input type="radio" name="option-payments" id="Thẻ game" />
+                  <label for="Thẻ game" class="payments-option_items-label">
+                    <div class="">
+                      <img
+                        src="./assets/images/ic_card_game.png"
+                        alt=""
+                        class="aspect-square"
+                      />
+                    </div>
+                    <p>Thẻ game</p>
+                  </label>
+                </div>
+                <div class="payments-option_items mb-6">
+                  <input type="radio" name="option-payments" id="Ví điện tử" />
+                  <label for="Ví điện tử" class="payments-option_items-label">
+                    <div class="">
+                      <img
+                        src="./assets/images/ic_wallet.png"
+                        alt=""
+                        class="aspect-square"
+                      />
+                    </div>
+                    <p>Ví điện tử</p></label
+                  >
+                </div>
+              </form>
+            </div>
+
+            <div class="payments-banking">
+              <div class="mb-8">
+                <div class="payments-banking__title">
+                  <p>Chuyển khoản bằng cách quét mã QR trên app ngân hàng</p>
+                </div>
+                <div class="payments-banking__detail">
+                  <div class="text-[#00649D] mb-2 w-full text-center">
+                    Bạn sẽ nhận được: <span class="font-bold">76 vnđ</span>
+                  </div>
+                  <div class="payments-banking__img-qr">
+                    <img
+                      src="./assets/images/qr_code.png"
+                      alt=""
+                      class="aspect-square"
+                    />
+                  </div>
+                  <div class="note">
+                    <div class="payments__note-title">* Lưu ý:</div>
+                    <ul class="text-[#252525]">
+                      <li class="mb-2">
+                        Với MB app Android hiện bị lỗi không hiển thị nội dung
+                        và số tiền,phía ngân hàng MB bank sẽ sửa lỗi và IOE có
+                        trách nghiệm thông báo sớm nhất đến khách hàng
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payments-banking__title">
+                <p>
+                  Chuyển khoản bằng cách nhập thông tin chuyển khoản lên app
+                  ngân hàng
+                </p>
+              </div>
+              <div class="payments-banking__detail">
+                <div class="step-1 mb-6">
+                  <div class="mb-2">
+                    <p>Bước 1: Nhập số tài khoản dưới đây vào app của bạn</p>
+                  </div>
+                  <div class="payments-banking__detail-border-step">
+                    <div class="payments-banking__detail-content-frame">
+                      <div class="payments-banking__detail-content-title">
+                        <p>19026062999888</p>
+                      </div>
+                      <button
+                        class="payments-banking__detail-copy-btn flex-row-center"
+                      >
+                        <div class="">
+                          <img
+                            src="./assets/images/ic_coppy.png"
+                            alt=""
+                            class="aspect-square"
+                          />
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="text-[14px]">
+                    <p>
+                      * Chủ tài khoản:
+                      <span class="font-bold">VTC ONLINE</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <img
+                    src="./assets/images/ic_next_step.png"
+                    alt=""
+                    class="aspect-square"
+                  />
+                </div>
+                <div class="step-2 mb-6">
+                  <div class="mb-2">
+                    <p>Bước 2: Nhập chính xác nội dung chuyển khoản</p>
+                  </div>
+                  <div class="payments-banking__detail-border-step">
+                    <div class="payments-banking__detail-content-frame">
+                      <div class="payments-banking__detail-content-title">
+                        <p>NAP SFEF8C</p>
+                      </div>
+                      <button
+                        class="payments-banking__detail-copy-btn flex-row-center"
+                      >
+                        <div class="">
+                          <img
+                            src="./assets/images/ic_coppy.png"
+                            alt=""
+                            class="aspect-square"
+                          />
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="text-[14px]">
+                    <p>
+                      * (Để đảm bảo giao dịch thành công, khách hàng cần nhập
+                      đúng nội dung chuyển khoản như trên)
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <img
+                    src="./assets/images/ic_next_step.png"
+                    alt=""
+                    class="aspect-square"
+                  />
+                </div>
+                <div class="step-3 mb-6">
+                  <div class="mb-2">
+                    <p>Bước 3: Nhập số tiền và ấn chuyển khoản</p>
+                  </div>
+                  <div class="payments-banking__detail-border-step">
+                    <div class="payments-banking__detail-content-frame">
+                      <div class="px-4 py-2 text-[#DC0000] font-bold w-full">
+                        <p>Số tiền tối thiểu 76.000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-[14px]">
+                    <p>
+                      * (Khách hàng cần nhập tối thiểu 50.000 đ và ấn chuyển
+                      khoản để hoàn thành )
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4">
+                <div class="payments__note-title">Lưu ý:</div>
+                <ul class="text-[#252525]">
+                  <li class="mb-2">
+                    - Mã gói gửi về điện thoại và email của bạn sẽ dùng để nhập
+                    trong ứng dụng Betia English, vui lòng không cung cấp mã cho
+                    bất kì ai sử dụng trước.
+                  </li>
+                  <li class="mb-2">
+                    - Để nhận gói nhanh nhất, chọn chuyển khoản nhanh 24/7 và
+                    tối thiểu 50.000 VNĐ.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="payments_card-game">
+              <div class="text-[#00649D]">
+                <p class="mb-4">Chọn loại thẻ :</p>
+                <div class="flex-row-center mb-4">
+                  <div class="payments-card__items">
+                    <input
+                      type="radio"
+                      name="card-game"
+                      class="text-[#252525]"
+                      id="gate"
+                      checked
+                    />
+                    <label for="gate" class="payments-card__items-label">
+                      <img
+                        src="./assets/images/ic_gate.png"
+                        alt=""
+                        class="aspect-[1/2] rounded-md"
+                      />
+                    </label>
+                  </div>
+                  <div class="payments-card__items">
+                    <input
+                      type="radio"
+                      name="card-game"
+                      class="text-[#252525]"
+                      id="v-coin"
+                    />
+                    <label for="v-coin" class="payments-card__items-label">
+                      <img
+                        src="./assets/images/ic_vcoin.png"
+                        alt=""
+                        class="aspect-[1/2] rounded-md"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 mb-6">
+                <div class="payments__note-title">Lưu ý:</div>
+                <ul class="text-[#252525]">
+                  <li class="mb-2">
+                    - Mệnh giá thẻ nạp cần lớn hơn hoặc bằng số tiền cần thêm để
+                    đổi gói
+                  </li>
+                  <li class="mb-2">
+                    - Nếu mệnh giá thẻ nạp nhỏ hơn số tiền cần, bạn cần phải nạp
+                    thêm để đổi gói
+                  </li>
+                  <li class="mb-2">
+                    - Nếu nạp thừa số tiền sẽ được đổi thành Go và cộng dồn vào
+                    số dư để sửa dụng cho lần giao dịch tiếp theo.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-8">
+                <p class="mb-4 text-[#105296]">Điền thông tin thẻ :</p>
+                <div class="text-[#252525] text-[14px] italic mb-4">
+                  Số tiền phải bằng hoặc hơn số tiền cần thanh toán
+                </div>
+                <div class="flex-row-between">
+                  <p>Mã thẻ:</p>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="mb-4 py-2 px-4 w-[75%]"
+                    placeholder="Nhập mã thẻ tại đây"
+                  />
+                </div>
+
+                <div class="flex-row-between">
+                  <p>Số seri:</p>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="py-2 px-4 w-[75%]"
+                    placeholder="Nhập số seri tại đây"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="payments_wallets">
+              <div class="text-[#00649D]">
+                <p class="mb-4">Chọn loại ví điện tử :</p>
+
+                <div class="flex-row-center mb-4">
+                  <div class="vtc-pay payments-wallet__items">
+                    <input
+                      type="radio"
+                      name="wallet_pay"
+                      class="text-[#252525]"
+                      id="vtc-pay"
+                      checked
+                    />
+                    <label for="vtc-pay">
+                      <img
+                        src="./assets/images/ic_vtc_pay.png"
+                        alt=""
+                        class="aspect-[1/2] rounded-md"
+                      />
+                    </label>
+                  </div>
+                  <div class="one-pay payments-wallet__items">
+                    <input
+                      type="radio"
+                      name="wallet_pay"
+                      class="text-[#252525]"
+                      id="one-pay"
+                    />
+                    <label for="one-pay">
+                      <img
+                        src="./assets/images/ic_one_pay.png"
+                        alt=""
+                        class="aspect-[1/2] rounded-md"
+                      />
+                    </label>
+                  </div>
+                </div>
+
+                <p class="font-bold mb-4">Thanh toán qua ví điện tử: VTC PAY</p>
+              </div>
+
+              <div class="mb-8">
+                <p class="mb-4 text-[#105296]">Điền số tiền cần nạp :</p>
+                <div class="text-[#252525] text-[14px] italic mb-2">
+                  Số tiền phải bằng hoặc hơn số tiền cần thanh toán
+                </div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="payments-wallet__price-field"
+                  placeholder="76.000 vnd"
+                />
+                <p class="text-[#F24B18] font-bold mb-6">
+                  Bảy Mươi Sáu Nghìn Việt Nam Đồng
+                </p>
+
+                <button class="payments-wallet__select-bank-btn">Chọn ngân hàng</button>
+              </div>
+
+              <div class="">
+                <p class="mb-4 text-[#00649D]">
+                  Chọn ngân hàng bạn muốn chuyển khoản:
+                </p>
+                <div class="w-full grid grid-cols-3 gap-4 mb-4">
+                  <div
+                    class="payments-wallet__bank-item flex-row-center payments-wallet__bank-selected"
+                  >
+                    <div class="">
+                      <img src="./assets/images/logo_techcombank.png" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    class="payments-wallet__bank-item flex-row-center"
+                  >
+                    <div class="">
+                      <img src="./assets/images/logo_techcombank.png" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    class="payments-wallet__bank-item flex-row-center"
+                  >
+                    <div class="">
+                      <img src="./assets/images/logo_techcombank.png" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    class="payments-wallet__bank-item flex-row-center"
+                  >
+                    <div class="">
+                      <img src="./assets/images/logo_techcombank.png" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    class="payments-wallet__bank-item flex-row-center"
+                  >
+                    <div class="">
+                      <img src="./assets/images/logo_techcombank.png" alt="" />
+                    </div>
+                  </div>
+                  <div
+                    class="payments-wallet__bank-item flex-row-center"
+                  >
+                    <div class="">
+                      <img src="./assets/images/logo_techcombank.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="text-[#105296] font-bold mb-6">
+                  <p>Ngân hàng TMCP Kỹ Thương (Techcombank)</p>
+                  <div class="">
+                    Chi nhánh: <span>Hoàn Kiếm</span> - Pgd:
+                    <span>Lĩnh Nam</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4">
+                <div class="payments__note-title">Lưu ý:</div>
+                <ul class="text-[#252525]">
+                  <li class="mb-2">
+                    - Mã gói gửi về điện thoại và email của bạn sẽ dùng để nhập
+                    trong ứng dụng Betia English, vui lòng không cung cấp mã cho
+                    bất kì ai sử dụng trước.
+                  </li>
+                  <li class="mb-2">
+                    - Để nhận gói nhanh nhất, chọn chuyển khoản nhanh 24/7 và
+                    tối thiểu 50.000 VNĐ.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="p-4 flex mx-auto md:max-w-[700px] lg:max-w-[50%] w-full lg:mr-0"
+      >
+        <button class="button-form lg:hidden">Tiến hành thanh toán</button>
+      </div>
+    </section>
+
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/toastify-js.js"></script>
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
